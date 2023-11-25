@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+var starting_position
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
@@ -9,8 +9,15 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var anim: AnimatedSprite2D = get_node("AnimatedSprite2D")
 
 func _ready():
-	anim.play("Idle")
-
+	starting_position = position
+	
+func respawn():
+	position = starting_position
+	
+func _on_Character_body_entered(body):
+	if body.name == "RespawnBlock":
+		respawn()
+		
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():

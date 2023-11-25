@@ -24,7 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cea0nsvmjikix" path="res://assets/Warrior-V1.3/Warrior/Individual Sprite/Run/Warrior_Run_8.png" id="22_t5arm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gh2n5"]
-size = Vector2(15.75, 34.25)
+size = Vector2(23, 35)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tbtg5"]
 atlas = ExtResource("2_4l3lt")
@@ -168,11 +168,11 @@ animations = [{
 [sub_resource type="Animation" id="Animation_ao7vf"]
 resource_name = "Idle"
 
-[sub_resource type="Animation" id="Animation_m5nqe"]
-resource_name = "Run"
-
 [sub_resource type="Animation" id="Animation_6r4te"]
 resource_name = "Jump"
+
+[sub_resource type="Animation" id="Animation_m5nqe"]
+resource_name = "Run"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vxif2"]
 _data = {
@@ -185,11 +185,10 @@ _data = {
 script = ExtResource("1_3588n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(34.125, -17.875)
+position = Vector2(-4.5, 4.5)
 shape = SubResource("RectangleShape2D_gh2n5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(38, -21)
 sprite_frames = SubResource("SpriteFrames_lx4ui")
 animation = &"Idle"
 
