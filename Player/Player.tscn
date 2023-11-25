@@ -557,7 +557,7 @@ metadata/_edit_lock_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(3, -22)
 sprite_frames = SubResource("SpriteFrames_2nap7")
-animation = &"Jump"
+animation = &"Attack"
 frame = 1
 metadata/_edit_lock_ = true
 
