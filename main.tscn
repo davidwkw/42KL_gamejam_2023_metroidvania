@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxtnej1y5stpd"]
+[gd_scene load_steps=4 format=3 uid="uid://bxtnej1y5stpd"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_07ojy"]
 [ext_resource type="PackedScene" uid="uid://doyghqb7p8rk" path="res://bg/bg.tscn" id="2_eon55"]
-[ext_resource type="AudioStream" uid="uid://dbh022sq1k8hf" path="res://assets/Music/background music/Breezy's Castle Quest - 2 Rebirth of Darkness.wav" id="3_vk843"]
 [ext_resource type="PackedScene" uid="uid://bdu43fyeogr6t" path="res://ui/music_control.tscn" id="4_ddi1v"]
 
 [node name="Main" type="Node2D"]
@@ -38,11 +37,6 @@ offset_left = 1057.0
 offset_top = 571.0
 offset_right = 1057.0
 offset_bottom = 571.0
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_vk843")
-volume_db = -12.0
-autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

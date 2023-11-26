@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://c57gkrwtju8i"]
 
-[ext_resource type="PackedScene" uid="uid://doyghqb7p8rk" path="res://bg/bg.tscn" id="1_ocy2k"]
-[ext_resource type="PackedScene" uid="uid://b4f42m1tqpibv" path="res://player/Player.tscn" id="1_vpqt1"]
+[ext_resource type="PackedScene" path="res://bg/bg.tscn" id="1_ocy2k"]
+[ext_resource type="PackedScene" uid="uid://b4f42m1tqpibv" path="res://Player/Player.tscn" id="1_vpqt1"]
 [ext_resource type="Texture2D" uid="uid://d26kahsvsatqr" path="res://assets/PixelFantasy_Caves_1.0/mainlev_build.png" id="3_t0vw3"]
 [ext_resource type="PackedScene" uid="uid://uodwub7cofei" path="res://mobs/slime.tscn" id="4_sqth0"]
 

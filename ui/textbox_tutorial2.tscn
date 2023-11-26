@@ -15,7 +15,7 @@ theme_override_constants/margin_bottom = 50
 
 [node name="Label" type="Label" parent="MarginContainer"]
 layout_mode = 2
-text = "ALong yur journey, you will encounter memory fragments.
+text = "Along your journey, you will encounter memory fragments.
 Collect all memory fragments to regain your memory and strength!
 "
 horizontal_alignment = 1

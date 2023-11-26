@@ -66,6 +66,12 @@ shape = SubResource("CircleShape2D_otmqc")
 position = Vector2(871, 296)
 texture = ExtResource("4_m2yms")
 
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Sapphire"]
+amount = 24
+emission_shape = 2
+emission_sphere_radius = 6.82
+gravity = Vector2(0, -20)
+
 [node name="Textbox" parent="." instance=ExtResource("5_oo6db")]
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

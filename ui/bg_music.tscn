@@ -5,4 +5,5 @@
 [node name="bg_music" type="Node2D"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true
 script = ExtResource("1_epxki")

@@ -17,7 +17,7 @@ theme_override_constants/margin_bottom = 50
 layout_mode = 2
 text = "Left/Right for movement
 Spacebar for jump
-F for interact 
+Z for interact 
 Beware of traps!
 "
 horizontal_alignment = 1
