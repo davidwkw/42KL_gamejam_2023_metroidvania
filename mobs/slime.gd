@@ -6,8 +6,8 @@ const MOVE_SPEED = 100
 
 func _on_player_detection_body_entered(body):
 	if body.name == "Player":
-		player = get_node("../Player/Player.tscn")
-		print(str(player.position))
+		player = get_node("res://Player/Player.tscn")
+	 	print(str(player.position))
 		var direction = (player.position - self.position).normalized()
 		if direction.x > 0:
 			self.position.x += MOVE_SPEED
