@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dbh022sq1k8hf"
+path="res://.godot/imported/Breezy's Castle Quest - 2 Rebirth of Darkness.wav-c514f298d01b9c77a5bb5a092b670260.sample"
+
+[deps]
+
+source_file="res://assets/Music/background music/Breezy's Castle Quest - 2 Rebirth of Darkness.wav"
+dest_files=["res://.godot/imported/Breezy's Castle Quest - 2 Rebirth of Darkness.wav-c514f298d01b9c77a5bb5a092b670260.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
