@@ -1,7 +1,7 @@
 extends Node2D
 
 
-var player_scene = preload("res://Player/Player.tscn")
+var player_scene = preload("res://player/Player.tscn")
 var player = null
 
 func _process(_delta):
