@@ -11,18 +11,19 @@ metadata/_edit_horizontal_guides_ = [-16.0]
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.4, 0.4)
-motion_mirroring = Vector2(1500, 1)
+motion_mirroring = Vector2(1897, 0)
 metadata/_edit_lock_ = true
 
 [node name="Cave_Shadows" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(955.5, 357.5)
+position = Vector2(949, 357)
 scale = Vector2(1.97604, 1.48542)
 texture = ExtResource("2_v7hh0")
+metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
 position = Vector2(-141, 3)
 motion_scale = Vector2(0.6, 0.6)
-motion_mirroring = Vector2(1270, 0)
+motion_mirroring = Vector2(1918, 1)
 metadata/_edit_lock_ = true
 
 [node name="Background3" type="Sprite2D" parent="ParallaxLayer3"]
@@ -34,11 +35,11 @@ metadata/_edit_lock_ = true
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 position = Vector2(6, 0)
 motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(1450, 0)
+motion_mirroring = Vector2(1555, 1)
 metadata/_edit_lock_ = true
 
 [node name="BG" type="Sprite2D" parent="ParallaxLayer"]
-position = Vector2(772.406, 363.75)
+position = Vector2(771, 359)
 scale = Vector2(1.61999, 1.49687)
 texture = ExtResource("4_yqe7p")
 metadata/_edit_lock_ = true
