@@ -51,6 +51,11 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
+func _process(_delta):
+	pass
+#	if Input.is_action_just_pressed("attack"):
+#		anim_player.play("Attack")
+	
 func direction_handler(direction : int):
 	var anim_sprite : AnimatedSprite2D = get_node("AnimatedSprite2D")
 	
