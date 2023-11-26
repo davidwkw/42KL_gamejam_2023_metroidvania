@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://doyghqb7p8rk"]
+
+[ext_resource type="Script" path="res://bg/bg.gd" id="1_cfipu"]
+[ext_resource type="Texture2D" uid="uid://m6u8faoxr566" path="res://assets/PixelFantasy_Caves_1.0/background2.png" id="2_v7hh0"]
+[ext_resource type="Texture2D" uid="uid://dir2fl6hrhita" path="res://assets/PixelFantasy_Caves_1.0/background3.png" id="3_nkxbn"]
+[ext_resource type="Texture2D" uid="uid://u8fa000qrrb" path="res://assets/PixelFantasy_Caves_1.0/background4b.png" id="4_yqe7p"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_cfipu")
+metadata/_edit_horizontal_guides_ = [-16.0]
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(1500, 1)
+metadata/_edit_lock_ = true
+
+[node name="Cave_Shadows" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(955.5, 357.5)
+scale = Vector2(1.97604, 1.48542)
+texture = ExtResource("2_v7hh0")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+position = Vector2(-141, 3)
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(1270, 0)
+metadata/_edit_lock_ = true
+
+[node name="Background3" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(1045.5, 349)
+scale = Vector2(2.11146, 1.30833)
+texture = ExtResource("3_nkxbn")
+metadata/_edit_lock_ = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(6, 0)
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1450, 0)
+metadata/_edit_lock_ = true
+
+[node name="BG" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(772.406, 363.75)
+scale = Vector2(1.61999, 1.49687)
+texture = ExtResource("4_yqe7p")
+metadata/_edit_lock_ = true
