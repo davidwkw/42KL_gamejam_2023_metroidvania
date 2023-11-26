@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://b4f42m1tqpibv"]
+[gd_scene load_steps=74 format=3 uid="uid://b4f42m1tqpibv"]
 
 [ext_resource type="Script" path="res://player/Player.gd" id="1_ajcdk"]
 [ext_resource type="Texture2D" uid="uid://dnqjd0inon8ww" path="res://assets/Warrior-V1.3/Warrior/Individual Sprite/Attack/Warrior_Attack_1.png" id="2_n0akp"]
@@ -103,9 +103,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("13_chtgh")
 }],
-"loop": true,
+"loop": false,
 "name": &"Attack",
-"speed": 12.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -291,8 +291,6 @@ animations = [{
 
 [sub_resource type="Animation" id="Animation_gk7bj"]
 resource_name = "Attack"
-length = 1.1
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -546,16 +544,19 @@ _data = {
 "WallSlide": SubResource("Animation_avsh7")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kul6b"]
+size = Vector2(28, 40)
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ajcdk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2.5625, -18)
+position = Vector2(0.4, -18)
 shape = SubResource("RectangleShape2D_gh2n5")
 metadata/_edit_lock_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3, -22)
+position = Vector2(5, -22)
 sprite_frames = SubResource("SpriteFrames_2nap7")
 animation = &"Attack"
 frame = 1
@@ -570,3 +571,13 @@ libraries = {
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.8, 1.8)
 limit_smoothed = true
+
+[node name="AttackCollision" type="Area2D" parent="."]
+position = Vector2(5, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackCollision"]
+position = Vector2(20, -21)
+shape = SubResource("RectangleShape2D_kul6b")
+disabled = true
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
