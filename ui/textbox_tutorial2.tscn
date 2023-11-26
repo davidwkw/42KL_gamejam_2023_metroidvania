@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dpxg4vc82antx"]
+
+[node name="Textbox" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 204.0
+grow_horizontal = 2
+size_flags_vertical = 8
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+text = "ALong yur journey, you will encounter memory fragments.
+Collect all memory fragments to regain your memory and strength!
+"
+horizontal_alignment = 1

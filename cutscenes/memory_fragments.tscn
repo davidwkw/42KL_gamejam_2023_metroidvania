@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://b3rl6ijae32yb"]
+[gd_scene load_steps=11 format=3 uid="uid://c7dylb4uacoo1"]
 
 [ext_resource type="Script" path="res://Scripts/intro.gd" id="1_go5fn"]
 [ext_resource type="PackedScene" uid="uid://b4f42m1tqpibv" path="res://Player/Player.tscn" id="1_v3xqo"]
-[ext_resource type="PackedScene" uid="uid://fuqnvxw4cpfs" path="res://ui/textbox.tscn" id="2_o04mj"]
+[ext_resource type="Script" path="res://Scripts/mem_frags.gd" id="4_22cqf"]
+[ext_resource type="Texture2D" uid="uid://d2xt4inib25n7" path="res://assets/16x16 Beginner Pixel Art Item Pack/Items/sapphire.png" id="4_m2yms"]
+[ext_resource type="PackedScene" uid="uid://dpxg4vc82antx" path="res://ui/textbox_tutorial2.tscn" id="5_oo6db"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fk78"]
 size = Vector2(6.5, 50)
@@ -11,12 +13,15 @@ size = Vector2(6.5, 50)
 size = Vector2(6, 48)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3se1r"]
-size = Vector2(345, 10.5)
+size = Vector2(509, 10.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_olqay"]
-size = Vector2(344, 13.5)
+size = Vector2(507, 13.5)
 
-[node name="intro" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_otmqc"]
+radius = 6.32456
+
+[node name="memory_frags" type="Node2D"]
 script = ExtResource("1_go5fn")
 metadata/_edit_horizontal_guides_ = []
 metadata/_edit_vertical_guides_ = [640.0]
@@ -29,7 +34,7 @@ offset_bottom = 728.0
 color = Color(0, 0, 0, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_v3xqo")]
-position = Vector2(642, 316)
+position = Vector2(490, 314)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -38,15 +43,30 @@ position = Vector2(468, 293)
 shape = SubResource("RectangleShape2D_8fk78")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(806, 295)
+position = Vector2(971, 295)
 shape = SubResource("RectangleShape2D_fo7xx")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(637.5, 266)
+position = Vector2(719.5, 266)
 shape = SubResource("RectangleShape2D_3se1r")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(638, 324)
+position = Vector2(716.5, 324)
 shape = SubResource("RectangleShape2D_olqay")
 
-[node name="Textbox" parent="." instance=ExtResource("2_o04mj")]
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(168, 4)
+script = ExtResource("4_22cqf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(704, 292)
+shape = SubResource("CircleShape2D_otmqc")
+
+[node name="Sapphire" type="Sprite2D" parent="."]
+position = Vector2(871, 296)
+texture = ExtResource("4_m2yms")
+
+[node name="Textbox" parent="." instance=ExtResource("5_oo6db")]
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

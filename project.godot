@@ -13,6 +13,10 @@ config_version=5
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.1")
 
+[autoload]
+
+BgMusic="*res://ui/bg_music.tscn"
+
 [input]
 
 ui_interact={
