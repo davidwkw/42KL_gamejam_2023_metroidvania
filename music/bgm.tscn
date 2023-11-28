@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://d4mafvyn5p82v"]
-
-[ext_resource type="AudioStream" uid="uid://be37vis11hi88" path="res://music/Peritune_Black_Crystal.ogg" id="1_d7upf"]
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
-stream = ExtResource("1_d7upf")
-autoplay = true
