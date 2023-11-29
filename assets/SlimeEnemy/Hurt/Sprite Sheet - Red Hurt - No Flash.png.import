@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0pe0vbadbhpm"
-path="res://.godot/imported/Sprite Sheet - Red Hurt - No Flash.png-842abd3ecc4c905fc56156895904f0d4.ctex"
+path="res://.godot/imported/Sprite Sheet - Red Hurt - No Flash.png-0992da1d9eab905694b906ac702dd8ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Slime Enemy/Hurt/Sprite Sheet - Red Hurt - No Flash.png"
-dest_files=["res://.godot/imported/Sprite Sheet - Red Hurt - No Flash.png-842abd3ecc4c905fc56156895904f0d4.ctex"]
+source_file="res://assets/SlimeEnemy/Hurt/Sprite Sheet - Red Hurt - No Flash.png"
+dest_files=["res://.godot/imported/Sprite Sheet - Red Hurt - No Flash.png-0992da1d9eab905694b906ac702dd8ed.ctex"]
 
 [params]
 

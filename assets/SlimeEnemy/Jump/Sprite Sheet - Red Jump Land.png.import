@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0eixiodufe7g"
-path="res://.godot/imported/Sprite Sheet - Red Jump Land.png-63dc5829093d6711cd964f0df55216fc.ctex"
+path="res://.godot/imported/Sprite Sheet - Red Jump Land.png-53aea347dc30d8d0cef85365658c40f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Slime Enemy/Jump/Sprite Sheet - Red Jump Land.png"
-dest_files=["res://.godot/imported/Sprite Sheet - Red Jump Land.png-63dc5829093d6711cd964f0df55216fc.ctex"]
+source_file="res://assets/SlimeEnemy/Jump/Sprite Sheet - Red Jump Land.png"
+dest_files=["res://.godot/imported/Sprite Sheet - Red Jump Land.png-53aea347dc30d8d0cef85365658c40f0.ctex"]
 
 [params]
 

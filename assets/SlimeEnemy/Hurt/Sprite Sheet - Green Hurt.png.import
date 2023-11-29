@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6poebcytepds"
-path="res://.godot/imported/Sprite Sheet - Green Hurt.png-bc935df4c5f5ed5ca2da1fa65955e097.ctex"
+path="res://.godot/imported/Sprite Sheet - Green Hurt.png-be32b82c41e611b2af3db9e762a0cf3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Slime Enemy/Hurt/Sprite Sheet - Green Hurt.png"
-dest_files=["res://.godot/imported/Sprite Sheet - Green Hurt.png-bc935df4c5f5ed5ca2da1fa65955e097.ctex"]
+source_file="res://assets/SlimeEnemy/Hurt/Sprite Sheet - Green Hurt.png"
+dest_files=["res://.godot/imported/Sprite Sheet - Green Hurt.png-be32b82c41e611b2af3db9e762a0cf3f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvfqk3tficsx2"
-path="res://.godot/imported/Sprite Sheet - Green Jump Down.png-f15b7c2cda3befba7b1560e4f2f04a57.ctex"
+path="res://.godot/imported/Sprite Sheet - Green Jump Down.png-195ca88313eb087d5d949d111f9483e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Slime Enemy/Jump/Sprite Sheet - Green Jump Down.png"
-dest_files=["res://.godot/imported/Sprite Sheet - Green Jump Down.png-f15b7c2cda3befba7b1560e4f2f04a57.ctex"]
+source_file="res://assets/SlimeEnemy/Jump/Sprite Sheet - Green Jump Down.png"
+dest_files=["res://.godot/imported/Sprite Sheet - Green Jump Down.png-195ca88313eb087d5d949d111f9483e2.ctex"]
 
 [params]
 

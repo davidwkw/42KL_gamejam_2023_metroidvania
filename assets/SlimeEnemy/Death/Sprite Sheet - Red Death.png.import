@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df0ud13lj1scf"
-path="res://.godot/imported/Sprite Sheet - Red Death.png-b2927c4f92e27acc534a0ee78f1dd102.ctex"
+path="res://.godot/imported/Sprite Sheet - Red Death.png-1843b557eaf8d87e9d7e7a8fe8e5b51e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Slime Enemy/Death/Sprite Sheet - Red Death.png"
-dest_files=["res://.godot/imported/Sprite Sheet - Red Death.png-b2927c4f92e27acc534a0ee78f1dd102.ctex"]
+source_file="res://assets/SlimeEnemy/Death/Sprite Sheet - Red Death.png"
+dest_files=["res://.godot/imported/Sprite Sheet - Red Death.png-1843b557eaf8d87e9d7e7a8fe8e5b51e.ctex"]
 
 [params]
 

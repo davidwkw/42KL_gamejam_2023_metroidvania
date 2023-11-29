@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2eb6hn27sl25"
-path="res://.godot/imported/Sprite Sheet - Green Jump Start-up.png-3dc114ffe0129feeaf80a0846604da32.ctex"
+path="res://.godot/imported/Sprite Sheet - Green Jump Start-up.png-2207537fb54c0c418282e35649d1c6b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Slime Enemy/Jump/Sprite Sheet - Green Jump Start-up.png"
-dest_files=["res://.godot/imported/Sprite Sheet - Green Jump Start-up.png-3dc114ffe0129feeaf80a0846604da32.ctex"]
+source_file="res://assets/SlimeEnemy/Jump/Sprite Sheet - Green Jump Start-up.png"
+dest_files=["res://.godot/imported/Sprite Sheet - Green Jump Start-up.png-2207537fb54c0c418282e35649d1c6b6.ctex"]
 
 [params]
 

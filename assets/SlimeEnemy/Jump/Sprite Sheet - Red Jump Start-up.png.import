@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duofyom82uo33"
-path="res://.godot/imported/Sprite Sheet - Red Jump Start-up.png-f20eeb76798ee4b0825cda0fc1f1c089.ctex"
+path="res://.godot/imported/Sprite Sheet - Red Jump Start-up.png-3c2042487da69475db51787971a5387d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Slime Enemy/Jump/Sprite Sheet - Red Jump Start-up.png"
-dest_files=["res://.godot/imported/Sprite Sheet - Red Jump Start-up.png-f20eeb76798ee4b0825cda0fc1f1c089.ctex"]
+source_file="res://assets/SlimeEnemy/Jump/Sprite Sheet - Red Jump Start-up.png"
+dest_files=["res://.godot/imported/Sprite Sheet - Red Jump Start-up.png-3c2042487da69475db51787971a5387d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dekvntgky47wb"
-path="res://.godot/imported/Sprite Sheet - Blue Jump to Fall.png-1d482fe48697f655e14db3dbd3118d39.ctex"
+path="res://.godot/imported/Sprite Sheet - Blue Jump to Fall.png-73fb151ba08ba3ee042c377225377364.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Slime Enemy/Jump/Sprite Sheet - Blue Jump to Fall.png"
-dest_files=["res://.godot/imported/Sprite Sheet - Blue Jump to Fall.png-1d482fe48697f655e14db3dbd3118d39.ctex"]
+source_file="res://assets/SlimeEnemy/Jump/Sprite Sheet - Blue Jump to Fall.png"
+dest_files=["res://.godot/imported/Sprite Sheet - Blue Jump to Fall.png-73fb151ba08ba3ee042c377225377364.ctex"]
 
 [params]
 
