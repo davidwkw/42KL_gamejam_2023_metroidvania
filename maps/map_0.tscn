@@ -1,11 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://dkmets51cdwkp"]
+[gd_scene load_steps=14 format=3 uid="uid://dkmets51cdwkp"]
 
 [ext_resource type="PackedScene" uid="uid://dbjsn2xj8v1xw" path="res://ui/textbox_tutorial.tscn" id="1_0bkuu"]
 [ext_resource type="PackedScene" uid="uid://doyghqb7p8rk" path="res://bg/bg.tscn" id="1_ocy2k"]
-[ext_resource type="Texture2D" uid="uid://d26kahsvsatqr" path="res://assets/PixelFantasy_Caves_1.0/mainlev_build.png" id="3_t0vw3"]
+[ext_resource type="Texture2D" uid="uid://qy2uhgw1ns3t" path="res://assets/PixelFantasy_Caves_1.0/mainlev_build.png" id="3_t0vw3"]
 [ext_resource type="Script" path="res://Scripts/Death.gd" id="4_cidne"]
 [ext_resource type="PackedScene" uid="uid://bdmcddef01cxo" path="res://Player/player_spawner.tscn" id="4_hbm3j"]
 [ext_resource type="Script" path="res://Scripts/Interact.gd" id="4_krqvb"]
+[ext_resource type="Script" path="res://scripts/Hp.gd" id="7_5qvpp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oimtg"]
 texture = ExtResource("3_t0vw3")
@@ -2965,6 +2966,13 @@ shape = SubResource("RectangleShape2D_iwog1")
 
 [node name="player_spawner" parent="." instance=ExtResource("4_hbm3j")]
 position = Vector2(80, 578)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Hp" type="Label" parent="UI"]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("7_5qvpp")
 
 [connection signal="body_entered" from="Interact" to="Interact" method="_on_body_entered"]
 [connection signal="body_exited" from="Interact" to="Interact" method="_on_body_exited"]
