@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://c7dylb4uacoo1"]
 
 [ext_resource type="Script" path="res://Scripts/intro.gd" id="1_go5fn"]
-[ext_resource type="PackedScene" uid="uid://b4f42m1tqpibv" path="res://Player/Player.tscn" id="1_v3xqo"]
+[ext_resource type="PackedScene" uid="uid://b4f42m1tqpibv" path="res://player/player.tscn" id="1_v3xqo"]
 [ext_resource type="Script" path="res://Scripts/mem_frags.gd" id="4_22cqf"]
 [ext_resource type="Texture2D" uid="uid://d2xt4inib25n7" path="res://assets/16x16 Beginner Pixel Art Item Pack/Items/sapphire.png" id="4_m2yms"]
 [ext_resource type="PackedScene" uid="uid://dpxg4vc82antx" path="res://ui/textbox_tutorial2.tscn" id="5_oo6db"]

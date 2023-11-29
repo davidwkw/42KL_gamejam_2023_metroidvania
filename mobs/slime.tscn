@@ -551,7 +551,6 @@ libraries = {
 }
 
 [node name="PlayerDetection" type="Area2D" parent="."]
-visible = false
 scale = Vector2(0.2, 0.2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]

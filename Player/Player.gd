@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
-var starting_position
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-var isAttacking = false;
+var starting_position : Vector2
+const SPEED : float = 300.0
+const JUMP_VELOCITY : float = -400.0
+var is_attacking = false;
+#var sound_queue : Node
+var attack_sound_reference : AudioStreamPlayer
+var health : int = 10
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -12,7 +15,8 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
 	anim_player.play("Idle")
-
+#	sound_queue = $SoundQueue
+	attack_sound_reference = $AttackSoundStream
 	starting_position = position
 	
 func respawn():
@@ -26,11 +30,11 @@ func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
-		if velocity.y > 0 and isAttacking == false:
+		if velocity.y > 0 and is_attacking == false:
 			anim_player.play("Fall")
 
 	# Handle Jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and isAttacking == false:
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and is_attacking == false:
 		velocity.y = JUMP_VELOCITY
 		anim_player.play("Jump")
 
@@ -40,25 +44,27 @@ func _physics_process(delta):
 	
 	direction_handler(direction)
 
-	if direction and isAttacking == false:
+	if direction and is_attacking == false:
 		velocity.x = direction * SPEED
 		if velocity.y == 0:
 			anim_player.play("Run")
 
 	else:
-		if isAttacking == false:
+		if is_attacking == false:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			if velocity.y == 0:
 				anim_player.play("Idle")
 	
-	if isAttacking == false and Input.is_action_just_pressed("Attack"):
+	if is_attacking == false and Input.is_action_just_pressed("Attack"):
 		anim_player.play("Attack");
+#		sound_queue.play_sound()
+		attack_sound_reference.play()
 		$AttackCollision/CollisionShape2D.disabled = false;
-		isAttacking = true;
+		is_attacking = true;
 		if is_on_floor():
 			velocity.x = 0;
 	
-	if is_on_floor() && isAttacking:
+	if is_on_floor() && is_attacking:
 		velocity.x = 0;
 	
 	move_and_slide()
@@ -79,6 +85,6 @@ func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "Attack":
 		anim_player.play("Idle");
 		$AttackCollision/CollisionShape2D.disabled = true;
-		isAttacking = false;
+		is_attacking = false;
 		if not is_on_floor():
 			anim_player.play("Fall")
