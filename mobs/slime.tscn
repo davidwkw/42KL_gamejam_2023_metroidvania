@@ -564,7 +564,6 @@ metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageHitbox"]
 position = Vector2(0, -50)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_2ltk7")
 metadata/_edit_lock_ = true
 
