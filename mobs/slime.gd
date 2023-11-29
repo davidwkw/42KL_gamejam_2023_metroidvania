@@ -10,7 +10,7 @@ var chase : bool = false
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
-		
+
 	if chase:
 		player = get_node("../../Player/Player")
 		var direction = (player.position - self.position).normalized()
@@ -23,7 +23,7 @@ func _physics_process(delta):
 		if anim_player.current_animation != "Death":
 			anim_player.play("Idle")
 		self.velocity.x = move_toward(self.velocity.x, 0, move_speed)
-		
+
 	move_and_slide()
 
 func _on_player_detection_body_entered(body):
@@ -36,12 +36,12 @@ func _on_player_detection_body_exited(body):
 
 func direction_handler(direction : float):
 	var anim_sprite : AnimatedSprite2D = $AnimatedSprite2D
-	
+
 	if direction > 0:
 		anim_sprite.flip_h = false
 	elif direction < 0:
 		anim_sprite.flip_h = true
-	else: 
+	else:
 		pass
 
 func _on_damage_hitbox_body_entered(body):
