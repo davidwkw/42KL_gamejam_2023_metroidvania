@@ -1,13 +1,14 @@
 extends Area2D
 
-
 var entered = false
 
-func _on_body_entered(_body: CharacterBody2D):
-	entered = true
+func _on_body_entered(body: CharacterBody2D):
+	if body.name == "Player":
+		entered = true
 
-func _on_body_exited(_body: CharacterBody2D):
-	entered = false
+func _on_body_exited(body: CharacterBody2D):
+	if body.name == "Player":
+		entered = false
 
 func _process(_delta):
 	if entered == true and Input.is_action_just_pressed("ui_interact"):
