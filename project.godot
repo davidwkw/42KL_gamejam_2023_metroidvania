@@ -15,7 +15,7 @@ config/features=PackedStringArray("4.1")
 
 [autoload]
 
-MusicController="*res://music/music_controller.tscn"
+MusicController="*res://autoload/music_controller.tscn"
 
 [display]
 
