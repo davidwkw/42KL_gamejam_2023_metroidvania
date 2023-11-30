@@ -1,6 +1,6 @@
 extends Area2D
 
-var entered = false
+var entered := false
 
 func _on_body_entered(body: CharacterBody2D):
 	if body.name == "Player":
